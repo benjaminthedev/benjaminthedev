@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 /* ────────────────────────────────────────────────────────── */
 /*  CONTENT                                                   */
@@ -813,6 +814,7 @@ export default function App() {
           </a>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
