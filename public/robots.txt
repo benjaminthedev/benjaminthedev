@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.benjaminthe.dev/sitemap.xml
+Sitemap: https://benjamin-the-dev-porfolio1.vercel.app/sitemap.xml

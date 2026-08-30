@@ -8,7 +8,7 @@ const PROFILE = {
   name: "Benjamin Dordoigne",
   handle: "benjaminthe.dev",
   email: "ben.dordoigne@gmail.com",
-  website: "https://www.benjaminthe.dev",
+  website: "https://benjamin-the-dev-porfolio1.vercel.app",
   github: "https://github.com/benjaminthedev",
   linkedin: "https://www.linkedin.com/in/benjamin-dordoigne/",
   location: "Warwickshire · London · Remote",
@@ -600,7 +600,7 @@ export default function App() {
             § 04 — Skills
           </div>
           <h2 className="font-serif text-[42px] md:text-[68px] leading-[0.9] tracking-[-0.03em] mb-12 md:mb-16">
-            The toolkit.
+            Frontend toolkit.
             <br />
             <span className="italic text-[#FF4D12]">Battle-tested.</span>
           </h2>
@@ -774,14 +774,14 @@ export default function App() {
               </Reveal>
               <Reveal delay={240}>
                 <a
-                  href="https://www.benjaminthe.dev"
+                  href={PROFILE.website}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-between gap-4 rounded-2xl border border-[#15120E] px-6 py-5 hover:bg-[#15120E] hover:text-[#F5F1EA] transition"
                 >
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-wider opacity-70">Website</div>
-                    <div className="font-serif text-[20px] md:text-[22px] mt-0.5">benjaminthe.dev</div>
+                    <div className="font-serif text-[20px] md:text-[22px] mt-0.5">benjamin-the-dev-porfolio1.vercel.app</div>
                   </div>
                   <span className="text-2xl shrink-0 group-hover:translate-x-1 transition">→</span>
                 </a>
@@ -801,11 +801,13 @@ export default function App() {
             <div>
               <div className="text-[14px]">{PROFILE.name}</div>
               <div className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-45 mt-0.5">
-                Senior React &amp; Frontend Developer · London, UK  © {new Date().getFullYear()} · {time} UK
+                Senior React &amp; Frontend Developer · London, UK
               </div>
             </div>
           </div>
-        
+          <div className="font-mono text-[11px] opacity-50">
+            © {new Date().getFullYear()} · Built by Benjamin · {time} UK
+          </div>
           <a href="#top" className="font-mono text-[11px] hover:text-[#FF4D12] transition">
             Back to top ↑
           </a>
