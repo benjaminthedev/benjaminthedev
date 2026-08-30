@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, type ReactNode } from "react";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 /* ────────────────────────────────────────────────────────── */
 /*  CONTENT                                                   */
@@ -813,6 +814,7 @@ export default function App() {
           </a>
         </div>
       </footer>
+      <SpeedInsights />
     </div>
   );
 }
