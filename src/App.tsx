@@ -8,13 +8,13 @@ const PROFILE = {
   name: "Benjamin Dordoigne",
   handle: "benjaminthe.dev",
   email: "ben.dordoigne@gmail.com",
-  website: "https://benjamin-the-dev-porfolio1.vercel.app",
+  website: "https://benjaminthe.dev",
   github: "https://github.com/benjaminthedev",
   linkedin: "https://www.linkedin.com/in/benjamin-dordoigne/",
   location: "Warwickshire · London · Remote",
-  status: "Senior React & Frontend Developer · London / UK",
-  tagline: "Senior React Developer.",
-  sub: "Senior React Developer and Frontend Developer in London, UK. 15 years shipping high-performance interfaces for finance, media, and global brands. React · Next.js · TypeScript · React Native.",
+  status: "Senior full-stack developer · London / UK",
+  tagline: "Senior full-stack developer.",
+  sub: "Senior full-stack developer for UK fintech and construction products. Next.js, TypeScript, React, Python, Laravel, and Nuxt — from real-time investment-bank workflows to builder portals and document extraction a person checks before it is saved.",
 };
 
 const METRICS = [
@@ -24,12 +24,46 @@ const METRICS = [
 
 const WORK = [
   {
-    year: "Nov 2021 — Present",
+    year: "Dec 2025 — Present",
+    company: "TruTrade",
+    place: "Leamington Spa",
+    role: "Senior React Developer · Contract",
+    blurb:
+      "Building the commercial platform UK builders use to price jobs, send client-ready quotes, and run the work through invoicing, materials, wages, and VAT.",
+    bullets: [
+      "Built the builder portal in Next.js, React, and TypeScript, taking a job from live-priced estimates and staged payment schedules through quote packs, client invoicing, and project delivery.",
+      "Shipped the client portal so homeowners can review estimates and drawings, accept or reject variations, and pay against published payment stages.",
+      "Added site operations in the same product: QR check-in and timesheets, CIS and PAYE wages, run-payroll, and an HMRC VAT dashboard with sales and purchase invoice drill-down.",
+      "Extended the Laravel API and the Nuxt admin and merchant portals for estimate review, merchant material rates, finance reporting, rewards, and bespoke quote-pack generation in PDF and Word.",
+      "Rebuilt trutrade.co.uk in Next.js, with SEO, structured data, and lead capture, and built a trade-show lead-capture app for events.",
+      "Built a Python takeoff app that extracts quantities and measurements from PDF and CAD construction drawings and turns them into a cost build-up for materials, labour, and production time.",
+    ],
+    stack: ["React", "Next.js", "TypeScript", "Python", "Nuxt", "Vue", "Laravel", "PHP", "Tailwind CSS", "Stripe", "Jest", "Vitest"],
+  },
+  {
+    year: "Nov 2025 — May 2026",
+    company: "Pilot Financial Systems",
+    place: "UK",
+    role: "Senior React Developer · Contract",
+    blurb:
+      "Worked on Pilot, the UK practice-management platform financial advisers use to run a case from fact-find through recommendations to a client-ready suitability report, without re-keying the same data.",
+    bullets: [
+      "Owned the suitability-report generators that assemble fact-find and advice data into the report an adviser issues — executive summary, scope of service, pensions, assets and liabilities, income and expenditure, and ongoing charges, with correct naming for individuals and joint clients.",
+      "Built firm-level suitability report settings so an advice firm can configure its own objectives and risk wording, time horizon, and section navigation.",
+      "Extended the multi-step advice workflow with capacity for loss, time horizon, state of health, and desired emergency fund, and tightened draft saving so an incomplete case persists against the right fact-find.",
+      "Fixed recommendation and valuation bugs where a fund switch, current plan value, or ongoing charge failed to carry from an existing product into the advice case and then into the generated report.",
+      "Stopped joint-client reports listing the same income, expenditure, assets, and liabilities twice, and corrected existing-product lists so each client only sees their own holdings.",
+      "Used Amazon Bedrock and AWS Textract so an adviser can open a client document and have fact-find or pension fields extracted into a review panel, then accept them onto the client record. Nothing is saved until a person checks the fields.",
+    ],
+    stack: ["React", "Next.js", "TypeScript", "tRPC", "Prisma", "Tailwind CSS", "Zod", "Amazon Bedrock", "AWS Textract", "Vitest"],
+  },
+  {
+    year: "Nov 2021 — Nov 2025",
     company: "The Corporate Action Company",
     place: "London",
-    role: "Senior React Developer",
+    role: "Senior React Developer · Contract",
     blurb:
-      "Solving complex challenges in real-time financial data processing — building intuitive, high-performance interfaces that translate intricate transaction workflows into a seamless user experience.",
+      "Solved complex challenges in real-time financial data processing — building intuitive, high-performance interfaces that translated intricate transaction workflows into a seamless user experience.",
     bullets: [
       "Architected a new risk management platform for a tier-1 investment bank that improved data processing efficiency by 40% and scaled to 1,000+ daily users.",
       "Reduced manual deployment time by 90% and accelerated feature delivery 3× by designing a full CI/CD pipeline with Jenkins.",
@@ -37,10 +71,10 @@ const WORK = [
       "Engineered a real-time SWIFT message processing system handling 50,000+ MT/MX messages daily at 99.9% accuracy.",
       "Built a React Native app that streamlines critical approval workflows for senior managers with actionable alerts and high-level summaries.",
     ],
-    stack: ["React", "React Native", "Next.js", "TypeScript", "Tailwind CSS", "Jenkins", "REST APIs"],
+    stack: ["React", "React Native", "Next.js", "TypeScript", "Tailwind CSS", "Jenkins", "Enzyme", "REST APIs"],
   },
   {
-    year: "Jun 2021 — Sep 2021",
+    year: "Jun 2021 — Nov 2021",
     company: "M&C Saatchi",
     place: "London",
     role: "React Developer · Contract",
@@ -77,7 +111,7 @@ const WORK = [
     blurb:
       "Designed, developed, and maintained a portfolio of 300+ websites and applications for clients from small businesses to tech startups — custom, high-performance solutions that drove growth and engagement.",
     bullets: [
-      "Managed the full project lifecycle for 300+ clients — consultation through deployment and maintenance.",
+      "Managed the full project lifecycle for 300+ clients — consultation through deployment and maintenance — with a 95% client retention rate.",
       "Consistently delivered high-performance websites through modern front-end optimisation, minification, and server-side enhancements.",
       "Translated complex business requirements into bespoke applications: custom e-commerce stores, secure subscription systems, and more.",
     ],
@@ -86,16 +120,23 @@ const WORK = [
 ];
 
 const SKILLS = {
-  Languages: ["JavaScript", "TypeScript", "Java", "Python", "GraphQL", "SQL", "HTML", "CSS", "SASS/SCSS"],
+  Languages: ["JavaScript", "TypeScript", "Python", "PHP", "GraphQL", "SQL", "HTML", "CSS", "SASS/SCSS"],
   Technologies: [
     "React",
     "React Native",
-    "Redux",
-    "Jest",
-    "Playwright",
     "Next.js",
+    "Redux",
+    "Nuxt",
+    "Vue",
+    "Laravel",
     "Express.js",
+    "tRPC",
+    "Prisma",
     "Tailwind CSS",
+    "Stripe",
+    "Jest",
+    "Vitest",
+    "Playwright",
     "Webpack",
     "Babel",
     "ESLint",
@@ -111,9 +152,9 @@ const EDUCATION = {
 const SERVICES = [
   {
     n: "01",
-    title: "Senior / Lead Frontend",
-    who: "Scale-ups & product teams",
-    what: "Embedded React leadership. Architecture, mentoring, code quality, shipping velocity. I unblock your team.",
+    title: "Full-stack product",
+    who: "Fintech & construction teams",
+    what: "Embedded senior delivery across Next.js, TypeScript, Laravel, and Python. Portals, workflows, and the APIs behind them.",
   },
   {
     n: "02",
@@ -320,17 +361,17 @@ export default function App() {
           <div className="grid grid-cols-12 gap-6 md:gap-10">
             <div className="col-span-12 lg:col-span-8">
               <Reveal>
-                <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-black/15 bg-white/50 font-mono text-[10px] uppercase tracking-[0.2em]">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-                  {PROFILE.status}
+                <div className="inline-flex max-w-full items-center gap-2.5 px-3.5 py-1.5 rounded-full border border-black/15 bg-white/50 font-mono text-[10px] uppercase tracking-[0.14em] sm:tracking-[0.2em]">
+                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse shrink-0" />
+                  <span className="min-w-0">{PROFILE.status}</span>
                 </div>
               </Reveal>
 
               <Reveal delay={60}>
                 <h1 className="mt-7 font-serif text-[52px] sm:text-[72px] md:text-[104px] lg:text-[128px] leading-[0.88] tracking-[-0.035em]">
-                  Senior React
+                  Senior
                   <br />
-                  Developer.
+                  Full-Stack Dev.
                   <br />
                   <span className="italic text-[#FF4D12]">Who ships.</span>
                   <span className="cursor-blink text-[#FF4D12]">_</span>
@@ -446,7 +487,7 @@ export default function App() {
               </h2>
             </div>
             <p className="font-mono text-[11px] opacity-50 max-w-[240px] leading-relaxed">
-              React &amp; Frontend Developer work across London and the UK — from tier-1 banks to FIFA campaign microsites.
+              Contract work across UK fintech and construction — builder portals, adviser platforms, and real-time bank workflows.
             </p>
           </div>
         </Reveal>
@@ -600,7 +641,7 @@ export default function App() {
             § 04 — Skills
           </div>
           <h2 className="font-serif text-[42px] md:text-[68px] leading-[0.9] tracking-[-0.03em] mb-12 md:mb-16">
-            Frontend toolkit.
+            Full-stack toolkit.
             <br />
             <span className="italic text-[#FF4D12]">Battle-tested.</span>
           </h2>
@@ -649,18 +690,26 @@ export default function App() {
           <div className="col-span-12 md:col-span-7 space-y-5 text-[16px] md:text-[17px] leading-[1.7]">
             <Reveal>
               <p>
-                I'm Benjamin — a Senior React Developer and Frontend Developer based in London, UK,
-                with 15 years of hands-on web development. I've spent the last several years deep in
-                financial platforms, agency campaign work, and product rebuilds where performance and
-                clarity actually matter.
+                I'm Benjamin — a senior full-stack developer for UK fintech and construction products,
+                with 15 years of hands-on web development. I work in Next.js, TypeScript, React, Python,
+                Laravel, and Nuxt.
               </p>
             </Reveal>
             <Reveal delay={60}>
               <p>
-                At The Corporate Action Company I build real-time risk and SWIFT processing interfaces
-                for tier-1 banks — systems that handle tens of thousands of messages a day. Before that,
-                I shipped high-traffic campaign sites for FIFA, Nando's, and Coca-Cola at M&C Saatchi,
-                and led the full front-end overhaul at Board Agenda.
+                Right now I'm at TruTrade, building the platform UK builders use to price jobs, send
+                quotes, and run the work through invoicing, materials, wages, and VAT — plus a Python
+                takeoff tool that pulls quantities off construction drawings. Before that, at Pilot
+                Financial Systems, I built suitability-report generators and document extraction where
+                an adviser checks the fields before anything is saved.
+              </p>
+            </Reveal>
+            <Reveal delay={90}>
+              <p>
+                From 2021 to 2025 I built real-time risk and SWIFT processing interfaces for a tier-1
+                investment bank at The Corporate Action Company. Earlier I shipped high-traffic campaign
+                sites for FIFA, Nando's, and Coca-Cola at M&C Saatchi, and led the full front-end
+                overhaul at Board Agenda.
               </p>
             </Reveal>
             <Reveal delay={120}>
@@ -691,7 +740,7 @@ export default function App() {
                 {[
                   ["Based", "Warwickshire, UK"],
                   ["Works", "Remote / London"],
-                  ["Focus", "React / Next / TS"],
+                  ["Focus", "Next / Laravel / Python"],
                   ["Since", "2009"],
                 ].map(([k, v]) => (
                   <div key={k}>
@@ -725,9 +774,8 @@ export default function App() {
             <div className="md:col-span-6">
               <Reveal>
                 <p className="text-[17px] md:text-[20px] leading-[1.5] max-w-[480px]">
-                  Looking for a Senior React Developer or Frontend Developer in London who can own
-                  architecture, ship clean interfaces, and raise the bar for the team? Drop me a line —
-                  happy to talk.
+                  Looking for a senior full-stack developer who can own a product from estimate to invoice,
+                  or from fact-find to a client-ready report? Drop me a line — happy to talk.
                 </p>
               </Reveal>
             </div>
@@ -781,7 +829,7 @@ export default function App() {
                 >
                   <div>
                     <div className="font-mono text-[10px] uppercase tracking-wider opacity-70">Website</div>
-                    <div className="font-serif text-[20px] md:text-[22px] mt-0.5">benjamin-the-dev-porfolio1.vercel.app</div>
+                    <div className="font-serif text-[20px] md:text-[22px] mt-0.5">benjaminthe.dev</div>
                   </div>
                   <span className="text-2xl shrink-0 group-hover:translate-x-1 transition">→</span>
                 </a>
@@ -801,7 +849,7 @@ export default function App() {
             <div>
               <div className="text-[14px]">{PROFILE.name}</div>
               <div className="font-mono text-[10px] uppercase tracking-[0.18em] opacity-45 mt-0.5">
-                Senior React &amp; Frontend Developer · London, UK
+                Senior full-stack developer · UK
               </div>
             </div>
           </div>
